@@ -1,2 +1,1 @@
-# droneracerskerala.github.io
-Drone Racers Kerala Website 
+Drone Racers Kerala 
