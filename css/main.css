@@ -683,3 +683,7 @@ h6 {
         -ms-filter: "FlipH";
 }
 #bee {transition: transform .1s}
+
+@media only screen and (max-device-width : 1024px) {
+   #bee{ display:none; }
+}
