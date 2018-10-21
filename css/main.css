@@ -300,6 +300,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /*opacity: 0.8;*/
 }
 
 
@@ -343,11 +344,11 @@ h6 {
   height: 100%;
   top: 0;
   left: 0;
-  background: #7579ff;
-  background: -webkit-linear-gradient(top, #b224ef, #7579ff);
-  background: -o-linear-gradient(top, #b224ef, #7579ff);
+  background: transparent;
+  /*background: -webkit-linear-gradient(top, #23b2ef, #7579ff);
+  background: -o-linear-gradient(top, #23b2ef, #7579ff);
   background: -moz-linear-gradient(top, #ffffff, #7579ff);
-  background: linear-gradient(top, #ffffff, #7579ff);
+  background: linear-gradient(top, #ffffff, #7579ff);*/
   opacity: 0.3;
 }
 
@@ -367,15 +368,15 @@ h6 {
   color: #ffffff;
   font-size: 50px;
   border: transparent;
-  background-color: #ff0077;
-  opacity: 0.8; 
+  background-color: #0066af;
+  opacity: 0.9; 
   border-radius: 100%;
 }
 
 
 .how-social:hover {
-  background-color:#000000;
-  color: #ffffff;
+  background-color:#ffffff;
+  color: #0066af;
 }
 
 
@@ -552,16 +553,18 @@ h6 {
 }
 
 .btn-primary {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #0066af;
+  border-color: #0066af;
     color: black;
+    opacity:0.9;
 
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #0072ff!important;
-  border-color: #0072ff !important;
-  color: white;
+  background-color: #ffffff!important;
+  border-color: #ffffff!important;
+  color:  #0066af;
+  opacity:1;
 }
 
 .btn-primary:active, .btn-primary:focus {
