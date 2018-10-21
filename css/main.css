@@ -557,6 +557,7 @@ h6 {
   border-color: #0066af;
     color: black;
     opacity:0.9;
+   border-radius: 30px;
 
 }
 
@@ -565,6 +566,7 @@ h6 {
   border-color: #ffffff!important;
   color:  #0066af;
   opacity:1;
+  border-radius: 100px;
 }
 
 .btn-primary:active, .btn-primary:focus {
