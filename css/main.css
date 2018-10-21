@@ -247,13 +247,19 @@ h6 {
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 .l1-txt1 {
-  font-family: Montserrat-Thin;
-  font-size: 50px;
-  color: #fff;
+  animation-name: blink;
+  animation-duration:ls;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+ font-family: 'Righteous', cursive;
+  font-size: 60px;
+  color: #ffffff;
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 10px;
+   text-shadow: 2px 2px #0066af;
 }
+
 
 
 /*==================================================================
@@ -355,14 +361,41 @@ h6 {
 
 /*---------------------------------------------*/
 .wrappic1 {
-  display: block;
+  
+   width:30%;
+    height: auto; 
   flex-grow: 1;
+  display: inline-block;
+  white-space : nowrap; /* this does the trick */
+          overflow : hidden; /* this prevents the grey divs from overflowing */
 }
 
 .wrappic1 img {
-  max-width: 100%;
+ max-width: 100%;
 }
 
+.prop1 {
+  display: inline-block;
+ flex-grow: 1;
+ width:10%;
+    white-space : nowrap; /* this does the trick */
+          overflow : hidden; /* this prevents the grey divs from overflowing */
+
+}
+.prop1 img {
+  max-width: 100%;
+}
+.prop2 {
+  display: inline-block;
+ flex-grow: 1;
+ width:10%;
+    white-space : nowrap; /* this does the trick */
+          overflow : hidden; /* this prevents the grey divs from overflowing */
+
+}
+.prop2 img {
+  max-width: 100%;
+}
 /*---------------------------------------------*/
 .how-social {
   color: #ffffff;
@@ -377,6 +410,8 @@ h6 {
 .how-social:hover {
   background-color:#ffffff;
   color: #0066af;
+   opacity: 1; 
+    font-size: 60px;
 }
 
 
@@ -544,7 +579,7 @@ h6 {
 }
 .btn {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .btn-xl {
@@ -555,9 +590,10 @@ h6 {
 .btn-primary {
   background-color: #0066af;
   border-color: #0066af;
-    color: black;
-    opacity:0.9;
+    color: white;
+    opacity:0.75;
    border-radius: 30px;
+
 
 }
 
@@ -566,10 +602,84 @@ h6 {
   border-color: #ffffff!important;
   color:  #0066af;
   opacity:1;
-  border-radius: 100px;
+  border-radius: 30px;
+    font-size: 35px;
 }
 
 .btn-primary:active, .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
+
+/*----------------------------------------------------------------
+-----------------------------------------------------------------*/
+
+#clock {
+ 
+    -webkit-animation: rotation 2s infinite linear;
+   
+
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-359deg);
+    }
+}
+
+#anticlock {
+ 
+    -webkit-animation: rotation 2s infinite linear;
+   
+
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+
+
+#keyframes blink{
+ from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.left {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.right {
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#bee {transition: transform .1s}
