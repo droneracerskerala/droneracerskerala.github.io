@@ -1,0 +1,208 @@
+.our-team{
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+   width: 80%;
+}
+
+    
+.our-team:hover{
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.our-team .pic{
+    overflow: hidden;
+    position: relative;
+    border-radius:50%;
+    width: 100%;
+}
+.our-team .pic:before,
+.our-team .pic:after{
+    content: "";
+    width: 200%;
+    height: 80%;
+    background: #0046a3;/*rgba(38,37,37,0.8); */
+    opacity: .8;
+    position: absolute;
+    top: -100%;
+    left: -4%;
+    transform: rotate(40deg);
+    transition: all 0.5s ease 0s;
+}
+.our-team .pic:after{
+    background:#2754ad; /* rgba(8,75,77,0.8)*/
+    opacity: .8;
+    top: auto;
+    left: auto;
+    bottom: -100%;
+    right: -4%;
+}
+.our-team:hover .pic:before{ top: 0; }
+.our-team:hover .pic:after{ bottom: 0; }
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+}
+/*.our-team .pic:before,
+.our-team .pic:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 13px solid #e6e5e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.our-team .pic:after{
+    border-color: #37b0f1 #e6e5e5 #e6e5e5 #37b0f1;
+    z-index: 1;
+    transform: rotate(-10deg);
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic:after{ transform: rotate(350deg); }*/
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.5s ease 0.3s;
+}
+.our-team:hover .social{ 
+    opacity: 1; 
+text-decoration:none;}
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #168be5;
+    color: #047168;
+    border-radius: 0 20px 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+    text-decoration:none;
+}
+.our-team .social li a:hover:after{ transform: rotate(180deg);  
+    text-decoration:none;} /*Rotating animation*/
+.our-team .team-content{ padding: 20px; }
+.our-team .title{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #047168;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.our-team .post{
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #707070;
+    text-transform: capitalize;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+.our-team .team-content{
+    width: 93%;
+    padding: 10px 0 10px;
+    background: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    opacity: 0;
+
+  /*  -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+   */ transform: translateX(-50%);
+    transition: all 0.3s cubic-bezier(0.5, 0.2,0.1,0.9);
+}
+.our-team:hover .team-content{
+    bottom: 10px;
+    opacity: 1;
+}
+.our-team .title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #168be5;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+/* ---- reset ---- */ 
+body{ margin:0;
+ font:normal 75% Arial, Helvetica, sans-serif; } 
+canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */
+ #particles-js{ 
+    position:fixed; 
+    width: 100%; 
+    height: 100%; 
+    background-color:#0f68c1; 
+    background-image: url(""); 
+ background-repeat: no-repeat; 
+ background-size: cover; 
+ background-position: 50% 50%;
+  z-index: -1;
+  } 
+  /* ---- stats.js ---- */
+  
+
+  .wrappic1 {
+  text-align: center;
+   width:100%;
+    height: auto; 
+  flex-grow: 1;
+  display: inline-block;
+  white-space : nowrap; /* this does the trick */
+          overflow : hidden; /* this prevents the grey divs from overflowing */
+          font-family: 'Alfa Slab One', cursive;
+}
+
+.wrappic1 img {
+ max-width: 50%;
+}
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#fff;
+    color:#0f68c1;
+    border-radius:50px;
+    text-align:center;
+    font-size: 50px;
+    box-shadow: 2px 2px 3px #999;
+}

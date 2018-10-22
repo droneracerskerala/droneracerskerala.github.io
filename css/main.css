@@ -583,8 +583,8 @@ h6 {
 }
 
 .btn-xl {
-  font-size: 40px;
-  padding: 30px 80px;
+  font-size: 20px;
+  padding: 20px 50px;
 }
 
 .btn-primary {
@@ -603,7 +603,7 @@ h6 {
   color:  #0066af;
   opacity:1;
   border-radius: 30px;
-    font-size: 35px;
+    font-size: 21px;
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -687,3 +687,7 @@ h6 {
 @media only screen and (max-device-width : 1024px) {
    #bee{ display:none; }
 }
+/*#bee:hover
+{
+  display: none;
+} */
